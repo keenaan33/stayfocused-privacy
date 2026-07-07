@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="StayFocused privacy policy — no servers, no accounts, everything stays on your device.">
+<title>StayFocused — Privacy Policy</title>
+<style>
+  :root {
+    --ink: #1C1712;
+    --ink-soft: #59503F;
+    --paper: #FAF8F5;
+    --paper-raised: #F0ECE6;
+    --line: rgba(28, 23, 18, 0.12);
+    --ember: #C9521F;
+    --ember-soft: rgba(232, 98, 42, 0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #F2F2F8;
+      --ink-soft: #A0A0B8;
+      --paper: #111118;
+      --paper-raised: #18181F;
+      --line: rgba(242, 242, 248, 0.12);
+      --ember: #F07A45;
+      --ember-soft: rgba(232, 98, 42, 0.16);
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Iowan Old Style", Georgia, serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px 96px;
+  }
+
+  header.top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 40px 0 28px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 40px;
+  }
+
+  .wordmark {
+    font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .wordmark span { color: var(--ember); }
+
+  .meta {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    color: var(--ink-soft);
+    text-align: right;
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: clamp(30px, 5vw, 40px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 10px;
+  }
+
+  .subhead {
+    color: var(--ink-soft);
+    font-size: 16px;
+    margin: 0 0 4px;
+  }
+
+  .langbar {
+    display: flex;
+    gap: 6px;
+    margin: 28px 0 44px;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+  }
+  .langbtn {
+    appearance: none;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink-soft);
+    padding: 7px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: inherit;
+  }
+  .langbtn:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+  .langbtn[aria-current="true"] {
+    background: var(--ember-soft);
+    border-color: var(--ember);
+    color: var(--ember);
+    font-weight: 600;
+  }
+
+  .doc { display: none; }
+  .doc[data-active="true"] { display: block; }
+
+  .lede {
+    font-size: 19px;
+    color: var(--ink-soft);
+    margin: 0 0 40px;
+  }
+
+  section {
+    padding: 30px 0;
+    border-top: 1px solid var(--line);
+  }
+  section:first-of-type { border-top: none; padding-top: 0; }
+
+  .num {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    color: var(--ember);
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+
+  p { margin: 0 0 14px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0 0 14px;
+    padding-left: 1.2em;
+    max-width: 60ch;
+  }
+  li { margin-bottom: 6px; }
+  li::marker { color: var(--ember); }
+
+  .taglist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0 4px;
+  }
+  .tag {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    color: var(--ink-soft);
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
+
+  a { color: var(--ember); }
+  a:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+
+  footer.bottom {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 520px) {
+    header.top { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .meta { text-align: left; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    section { animation: rise 0.4s ease both; }
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <span class="wordmark">Stay<span>Focused</span></span>
+    <span class="meta">Effective 2026-07-07<br>v1.0</span>
+  </header>
+
+  <div class="langbar" role="tablist" aria-label="Language">
+    <button class="langbtn" role="tab" aria-current="true" data-lang="en" type="button">English</button>
+    <button class="langbtn" role="tab" aria-current="false" data-lang="bs" type="button">Bosanski</button>
+    <button class="langbtn" role="tab" aria-current="false" data-lang="de" type="button">Deutsch</button>
+  </div>
+
+  <!-- ───────────────────────── ENGLISH ───────────────────────── -->
+  <article class="doc" data-doc="en" data-active="true">
+    <h1>Privacy Policy</h1>
+    <p class="subhead">For the StayFocused mobile app, by Pantzo Labs.</p>
+    <p class="lede">Short version: StayFocused doesn't have a server. Everything it tracks — your sessions, your streak, your settings — stays on your phone, in storage only your device can read. We never see it, and we never sell, share, or analyze it, because we can't.</p>
+
+    <section>
+      <span class="num">01</span>
+      <h2>What this app is</h2>
+      <p>StayFocused is a focus timer with gamification (XP, levels, streaks, achievements) and personal analytics. It has no user accounts, no sign-in, and no backend server of any kind. There is nothing to log into and nothing for us to store on your behalf, because we don't operate any infrastructure that the app talks to.</p>
+    </section>
+
+    <section>
+      <span class="num">02</span>
+      <h2>What's stored, and where</h2>
+      <p>Everything the app remembers is written to your device's local storage (AsyncStorage) and never leaves it unless you explicitly choose to export it. That includes:</p>
+      <div class="taglist">
+        <span class="tag">focus sessions</span>
+        <span class="tag">stats &amp; streaks</span>
+        <span class="tag">XP &amp; level</span>
+        <span class="tag">achievements</span>
+        <span class="tag">tasks</span>
+        <span class="tag">timer settings</span>
+        <span class="tag">daily goal</span>
+        <span class="tag">accent theme</span>
+        <span class="tag">dark/light mode</span>
+        <span class="tag">language choice</span>
+      </div>
+      <p>Uninstalling the app deletes all of it. So does the "Reset All Data" option inside Settings — instantly, permanently, and without contacting anyone, because there's no one to contact.</p>
+    </section>
+
+    <section>
+      <span class="num">03</span>
+      <h2>Notifications</h2>
+      <p>If you allow notifications, StayFocused schedules a local alert on your device for when a focus session or break ends. These are scheduled and delivered entirely on-device by the operating system — no push server is involved, and no notification content is transmitted anywhere.</p>
+    </section>
+
+    <section>
+      <span class="num">04</span>
+      <h2>Your data, your export</h2>
+      <p>Settings includes an "Export Backup" option that hands your data to your device's native share sheet — as a JSON file or plain text, your choice of destination (Files, email, a note, wherever). That export happens locally and is initiated by you; the app doesn't send it anywhere on its own. "Import Backup" reverses this, reading a file you provide back into local storage.</p>
+    </section>
+
+    <section>
+      <span class="num">05</span>
+      <h2>What we don't do</h2>
+      <ul>
+        <li>No analytics or tracking SDKs</li>
+        <li>No advertising, and no ad identifiers</li>
+        <li>No third-party data sharing — there's no data on our end to share</li>
+        <li>No account creation, so no email, password, or profile is ever collected</li>
+      </ul>
+      <p>The only outbound network calls the app can make are the ones your OS makes on its own behalf: checking notification permissions, and — only if you tap "Rate the App" — opening the App Store or Play Store's built-in review prompt. Neither involves StayFocused sending your data anywhere.</p>
+    </section>
+
+    <section>
+      <span class="num">06</span>
+      <h2>Children's privacy</h2>
+      <p>Because the app collects nothing and transmits nothing, there's no personal information to protect regardless of the user's age. StayFocused doesn't knowingly target children, and doesn't need to ask anyone's age to work correctly.</p>
+    </section>
+
+    <section>
+      <span class="num">07</span>
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, the "Effective" date at the top of this page will change with it. Since the app has no way to contact you directly, please check back here if you'd like to stay current.</p>
+    </section>
+
+    <section>
+      <span class="num">08</span>
+      <h2>Contact</h2>
+      <p>Questions about this policy or the app can be sent to <a href="mailto:kenan.jasarevic22@gmail.com">kenan.jasarevic22@gmail.com</a>.</p>
+    </section>
+
+    <footer class="bottom">StayFocused is developed by Pantzo Labs. This policy applies only to the StayFocused mobile app.</footer>
+  </article>
+
+  <!-- ───────────────────────── BOSANSKI ───────────────────────── -->
+  <article class="doc" data-doc="bs">
+    <h1>Politika privatnosti</h1>
+    <p class="subhead">Za mobilnu aplikaciju StayFocused, autor Pantzo Labs.</p>
+    <p class="lede">Kratka verzija: StayFocused nema server. Sve što aplikacija pamti — tvoje sesije, niz, postavke — ostaje na tvom telefonu, u memoriji koju samo tvoj uređaj može čitati. Mi to nikad ne vidimo, i nikad ne prodajemo, dijelimo niti analiziramo, jer ne možemo.</p>
+
+    <section>
+      <span class="num">01</span>
+      <h2>Šta je ova aplikacija</h2>
+      <p>StayFocused je tajmer za fokus sa gamifikacijom (XP, nivoi, nizovi, dostignuća) i ličnom analitikom. Nema korisničke račune, nema prijavu, i nema nikakav server u pozadini. Nema se gdje prijaviti i nema ništa što bismo mi čuvali umjesto tebe, jer ne održavamo nikakvu infrastrukturu sa kojom aplikacija komunicira.</p>
+    </section>
+
+    <section>
+      <span class="num">02</span>
+      <h2>Šta se čuva, i gdje</h2>
+      <p>Sve što aplikacija pamti upisuje se u lokalnu memoriju tvog uređaja (AsyncStorage) i nikad ne napušta uređaj osim ako ti sam/a to ne odlučiš izvesti. To uključuje:</p>
+      <div class="taglist">
+        <span class="tag">fokus sesije</span>
+        <span class="tag">statistika i nizovi</span>
+        <span class="tag">XP i nivo</span>
+        <span class="tag">dostignuća</span>
+        <span class="tag">zadaci</span>
+        <span class="tag">postavke tajmera</span>
+        <span class="tag">dnevni cilj</span>
+        <span class="tag">boja teme</span>
+        <span class="tag">tamni/svijetli mod</span>
+        <span class="tag">izbor jezika</span>
+      </div>
+      <p>Brisanje aplikacije briše sve navedeno. Isto radi i opcija "Reset All Data" unutar Postavki — trenutno, trajno, i bez kontaktiranja bilo koga, jer nema koga kontaktirati.</p>
+    </section>
+
+    <section>
+      <span class="num">03</span>
+      <h2>Notifikacije</h2>
+      <p>Ako dozvoliš notifikacije, StayFocused zakazuje lokalno obavještenje na tvom uređaju kad fokus sesija ili pauza završi. Ova obavještenja se zakazuju i isporučuju u potpunosti od strane operativnog sistema na uređaju — nema push servera uključenog, i sadržaj notifikacije se nikuda ne šalje.</p>
+    </section>
+
+    <section>
+      <span class="num">04</span>
+      <h2>Tvoji podaci, tvoj izvoz</h2>
+      <p>Postavke uključuju opciju "Export Backup" koja predaje tvoje podatke nativnom share meniju tvog uređaja — kao JSON fajl ili obični tekst, ti biraš odredište (Files, email, bilješka, bilo šta). Taj izvoz se dešava lokalno i pokrećeš ga ti; aplikacija ga sama nikuda ne šalje. "Import Backup" radi obrnuto, čita fajl koji ti daš nazad u lokalnu memoriju.</p>
+    </section>
+
+    <section>
+      <span class="num">05</span>
+      <h2>Šta mi ne radimo</h2>
+      <ul>
+        <li>Nema analitike niti alata za praćenje</li>
+        <li>Nema reklama, niti identifikatora za reklame</li>
+        <li>Nema dijeljenja podataka sa trećim stranama — nema podataka na našoj strani koje bismo dijelili</li>
+        <li>Nema kreiranja računa, pa se nikad ne prikuplja email, lozinka niti profil</li>
+      </ul>
+      <p>Jedini mrežni pozivi koje aplikacija može napraviti su oni koje tvoj OS radi u svoje ime: provjera dozvola za notifikacije, i — samo ako klikneš "Oceni Aplikaciju" — otvaranje ugrađenog prozora za ocjenjivanje u App Store-u ili Play Store-u. Nijedan od ovih ne uključuje StayFocused koji šalje tvoje podatke bilo gdje.</p>
+    </section>
+
+    <section>
+      <span class="num">06</span>
+      <h2>Privatnost djece</h2>
+      <p>Pošto aplikacija ništa ne prikuplja niti šalje, nema ličnih podataka za zaštititi bez obzira na uzrast korisnika. StayFocused svjesno ne cilja djecu, i ne mora pitati ničiji uzrast da bi ispravno radila.</p>
+    </section>
+
+    <section>
+      <span class="num">07</span>
+      <h2>Izmjene ove politike</h2>
+      <p>Ako se ova politika promijeni, datum "Effective" na vrhu ove stranice će se promijeniti zajedno s njom. Pošto aplikacija nema način da te direktno kontaktira, provjeri ovdje povremeno ako želiš biti u toku.</p>
+    </section>
+
+    <section>
+      <span class="num">08</span>
+      <h2>Kontakt</h2>
+      <p>Pitanja o ovoj politici ili aplikaciji možeš poslati na <a href="mailto:kenan.jasarevic22@gmail.com">kenan.jasarevic22@gmail.com</a>.</p>
+    </section>
+
+    <footer class="bottom">StayFocused razvija Pantzo Labs. Ova politika se odnosi samo na mobilnu aplikaciju StayFocused.</footer>
+  </article>
+
+  <!-- ───────────────────────── DEUTSCH ───────────────────────── -->
+  <article class="doc" data-doc="de">
+    <h1>Datenschutzerklärung</h1>
+    <p class="subhead">Für die mobile App StayFocused von Pantzo Labs.</p>
+    <p class="lede">Kurz gesagt: StayFocused hat keinen Server. Alles, was die App verfolgt — deine Sitzungen, deine Serie, deine Einstellungen — bleibt auf deinem Telefon, in einem Speicher, den nur dein Gerät lesen kann. Wir sehen es nie und verkaufen, teilen oder analysieren es nie, weil wir es gar nicht können.</p>
+
+    <section>
+      <span class="num">01</span>
+      <h2>Was diese App ist</h2>
+      <p>StayFocused ist ein Fokus-Timer mit Gamification (XP, Level, Serien, Erfolge) und persönlicher Statistik. Es gibt keine Benutzerkonten, keine Anmeldung und keinen Server im Hintergrund. Es gibt nichts, wo man sich anmelden könnte, und nichts, was wir für dich speichern würden — weil wir keine Infrastruktur betreiben, mit der die App kommuniziert.</p>
+    </section>
+
+    <section>
+      <span class="num">02</span>
+      <h2>Was gespeichert wird, und wo</h2>
+      <p>Alles, woran sich die App erinnert, wird im lokalen Speicher deines Geräts (AsyncStorage) abgelegt und verlässt ihn nie, außer du entscheidest dich ausdrücklich für einen Export. Dazu gehören:</p>
+      <div class="taglist">
+        <span class="tag">Fokus-Sitzungen</span>
+        <span class="tag">Statistik &amp; Serien</span>
+        <span class="tag">XP &amp; Level</span>
+        <span class="tag">Erfolge</span>
+        <span class="tag">Aufgaben</span>
+        <span class="tag">Timer-Einstellungen</span>
+        <span class="tag">Tagesziel</span>
+        <span class="tag">Akzentfarbe</span>
+        <span class="tag">Hell-/Dunkelmodus</span>
+        <span class="tag">Sprachauswahl</span>
+      </div>
+      <p>Das Deinstallieren der App löscht alles davon. Ebenso die Option "Alle Daten zurücksetzen" in den Einstellungen — sofort, dauerhaft und ohne dass jemand kontaktiert wird, weil es niemanden zu kontaktieren gibt.</p>
+    </section>
+
+    <section>
+      <span class="num">03</span>
+      <h2>Benachrichtigungen</h2>
+      <p>Wenn du Benachrichtigungen erlaubst, plant StayFocused eine lokale Benachrichtigung auf deinem Gerät für das Ende einer Fokus-Sitzung oder Pause. Diese werden vollständig auf dem Gerät vom Betriebssystem geplant und zugestellt — es ist kein Push-Server beteiligt, und der Inhalt der Benachrichtigung wird nirgendwohin übertragen.</p>
+    </section>
+
+    <section>
+      <span class="num">04</span>
+      <h2>Deine Daten, dein Export</h2>
+      <p>Die Einstellungen enthalten eine Option "Backup exportieren", die deine Daten an das native Freigabemenü deines Geräts übergibt — als JSON-Datei oder reinen Text, das Ziel wählst du (Dateien, E-Mail, eine Notiz, was auch immer). Dieser Export geschieht lokal und wird von dir ausgelöst; die App sendet ihn nicht von sich aus irgendwohin. "Backup importieren" macht das Gegenteil und liest eine von dir bereitgestellte Datei zurück in den lokalen Speicher.</p>
+    </section>
+
+    <section>
+      <span class="num">05</span>
+      <h2>Was wir nicht tun</h2>
+      <ul>
+        <li>Keine Analyse- oder Tracking-SDKs</li>
+        <li>Keine Werbung und keine Werbe-IDs</li>
+        <li>Keine Datenweitergabe an Dritte — es gibt auf unserer Seite keine Daten zum Weitergeben</li>
+        <li>Keine Kontoerstellung, daher werden nie E-Mail, Passwort oder Profil erfasst</li>
+      </ul>
+      <p>Die einzigen ausgehenden Netzwerkaufrufe, die die App machen kann, sind die, die dein Betriebssystem in eigenem Auftrag macht: die Prüfung von Benachrichtigungsberechtigungen und — nur wenn du auf "App bewerten" tippst — das Öffnen des integrierten Bewertungsdialogs im App Store oder Play Store. Bei keinem davon sendet StayFocused deine Daten irgendwohin.</p>
+    </section>
+
+    <section>
+      <span class="num">06</span>
+      <h2>Datenschutz für Kinder</h2>
+      <p>Da die App nichts erfasst und nichts überträgt, gibt es unabhängig vom Alter des Nutzers keine personenbezogenen Daten zu schützen. StayFocused richtet sich nicht wissentlich an Kinder und muss niemandes Alter abfragen, um korrekt zu funktionieren.</p>
+    </section>
+
+    <section>
+      <span class="num">07</span>
+      <h2>Änderungen dieser Richtlinie</h2>
+      <p>Falls sich diese Richtlinie ändert, ändert sich das Datum "Effective" oben auf dieser Seite mit. Da die App keine Möglichkeit hat, dich direkt zu kontaktieren, schau bitte gelegentlich hier vorbei, um auf dem Laufenden zu bleiben.</p>
+    </section>
+
+    <section>
+      <span class="num">08</span>
+      <h2>Kontakt</h2>
+      <p>Fragen zu dieser Richtlinie oder zur App kannst du an <a href="mailto:kenan.jasarevic22@gmail.com">kenan.jasarevic22@gmail.com</a> senden.</p>
+    </section>
+
+    <footer class="bottom">StayFocused wird von Pantzo Labs entwickelt. Diese Richtlinie gilt ausschließlich für die mobile App StayFocused.</footer>
+  </article>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbtn');
+    var docs = document.querySelectorAll('.doc');
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var lang = btn.getAttribute('data-lang');
+        buttons.forEach(function (b) { b.setAttribute('aria-current', String(b === btn)); });
+        docs.forEach(function (d) {
+          d.setAttribute('data-active', String(d.getAttribute('data-doc') === lang));
+        });
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
