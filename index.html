@@ -12,18 +12,18 @@
     --paper: #FAF8F5;
     --paper-raised: #F0ECE6;
     --line: rgba(28, 23, 18, 0.12);
-    --ember: #C9521F;
-    --ember-soft: rgba(232, 98, 42, 0.12);
+    --brand: #1C5791;
+    --brand-soft: rgba(46, 163, 200, 0.12);
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --ink: #F2F2F8;
-      --ink-soft: #A0A0B8;
-      --paper: #111118;
-      --paper-raised: #18181F;
-      --line: rgba(242, 242, 248, 0.12);
-      --ember: #F07A45;
-      --ember-soft: rgba(232, 98, 42, 0.16);
+      --ink: #F2F5F8;
+      --ink-soft: #A0ADB8;
+      --paper: #111518;
+      --paper-raised: #181C1F;
+      --line: rgba(242, 245, 248, 0.12);
+      --brand: #70D8C4;
+      --brand-soft: rgba(46, 163, 200, 0.16);
     }
   }
 
@@ -63,7 +63,7 @@
     color: var(--ink);
     text-decoration: none;
   }
-  .wordmark span { color: var(--ember); }
+  .wordmark span { color: var(--brand); }
 
   .meta {
     font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -108,11 +108,11 @@
     text-transform: uppercase;
     font-family: inherit;
   }
-  .langbtn:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+  .langbtn:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
   .langbtn[aria-current="true"] {
-    background: var(--ember-soft);
-    border-color: var(--ember);
-    color: var(--ember);
+    background: var(--brand-soft);
+    border-color: var(--brand);
+    color: var(--brand);
     font-weight: 600;
   }
 
@@ -134,7 +134,7 @@
   .num {
     font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
     font-size: 12px;
-    color: var(--ember);
+    color: var(--brand);
     letter-spacing: 0.05em;
     display: block;
     margin-bottom: 8px;
@@ -157,7 +157,7 @@
     max-width: 60ch;
   }
   li { margin-bottom: 6px; }
-  li::marker { color: var(--ember); }
+  li::marker { color: var(--brand); }
 
   .taglist {
     display: flex;
@@ -175,8 +175,8 @@
     border-radius: 6px;
   }
 
-  a { color: var(--ember); }
-  a:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+  a { color: var(--brand); }
+  a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
 
   footer.bottom {
     margin-top: 40px;
